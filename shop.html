@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenfield Local Hub | Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/shop-styles.css">
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/GLH-Logo.png" alt="Greenfield Local Hub Logo" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="our-methods.html">Our Methods</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="right-side-header-icons">
+            <li><a href="user-profile.html"><img src="assets/icons/profile-icon.png" alt="Profile Icon" class="profile-icon" aria-label="View Profile"></a></li>
+            <li><a href="checkout.html"><img src="assets/icons/basket-icon.png" alt="Basket Icon" class="basket-icon" aria-label="View Basket"></a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <!-- Hero section-->
+
+        <section class="hero">
+            <img src="assets/hero-images/store-page-hero.jpg" alt="Hero Image" class="hero-image">
+            
+            <div class="welcome-text-container">
+                <h3>Our Store</h3>
+                <p>Shop our local produce for collection of delivery. Earn loyalty points to redeem money off your next shop!</p>
+            </div>
+
+        </section>
+
+        <section class="filtering-bar">
+            <img src="assets/icons/filter-icon.png" alt="Filter Icon" class="filter-icon">
+            <!-- planned drop down which i will implement using the button image later
+            <select class="filter-dropdown" aria-label="Filter products by category">
+                <option value="">Filter by category</option>
+                <option value="fruit">Fruit</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="dairy">Dairy</option>
+                <option value="meat">Meat</option>
+                <option value="bakery">Bakery</option>
+            
+            </select>
+            -->
+
+
+
+            <img src="assets/icons/sort-icon.png" alt="Sort Icon" class="sort-icon">
+            <!--
+             planned drop down which i will implement using the button image later
+            <select class="sort-dropdown" aria-label="Sort products">
+                <option value="">Sort by</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="newest">Newest Arrivals</option>
+                <option value="popularity">Popularity</option>
+            
+            </select>
+            -->
+
+            <input type="text" placeholder="Search products..." class="search-bar" aria-label="Search products">
+
+
+        </section>
+
+
+
+        <!-- product list section -->
+        
+        <section class="product-list">
+            <div class="product-row">
+
+                <div class="product-card">
+                
+                    <img src="assets/products/westcombe-cheese.png" alt="Westcombe Cheddar" class="product-image">
+                    <p class="price">£6.50</p>
+                    <div class="info-row">
+                        <a href="#" class="add-to-basket-btn" aria-label="Add Westcombe Cheddar to basket">
+                        <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                        </a>
+                        <div class="stock-level-indicator in-stock">In Stock</div>
+                    </div>
+                    <h3 class="product-title">Westcombe Cheddar</h3>
+                </div>
+
+                <div class="product-card">
+                
+                    <img src="assets/products/lamb-rack.png" alt="Lamb Rack" class="product-image">
+                    <p class="price">£30.60</p>
+                    <div class="info-row">
+                        <a href="#" class="add-to-basket-btn" aria-label="Add Lamb Rack to basket">
+                        <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                        </a>
+                        <div class="stock-level-indicator in-stock">In Stock</div>
+                    </div>
+                    <h3 class="product-title">Lamb Rack</h3>
+                </div>
+
+                <div class="product-card">
+                
+                    <img src="assets/products/spring-lamb-shoulder.jpg" alt="Spring Lamb Shoulder" class="product-image">
+                    <p class="price">£33.00</p>
+                    <div class="info-row">
+                        <a href="#" class="add-to-basket-btn" aria-label="Add Spring Lamb Shoulder to basket">
+                        <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                        </a>
+                        <div class="stock-level-indicator out-of-stock">Out of Stock</div>
+                    </div>
+                    <h3 class="product-title">Spring Lamb Shoulder</h3>
+                </div>
+
+            </div>
+
+
+            <div class="product-row">
+
+                <div class="product-card">
+                
+                    <img src="assets/products/merguez-sausages.jpg" alt="Merguez Sausages" class="product-image">
+                    <p class="price">£7.50</p>
+                    <div class="info-row">
+                        <a href="#" class="add-to-basket-btn" aria-label="Add Merguez Sausages to basket">
+                        <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                        </a>
+                        <div class="stock-level-indicator in-stock">In Stock</div>
+                    </div>
+                    <h3 class="product-title">Merguez Sausages</h3>
+                </div>
+
+                <div class="product-card">
+                
+                    <img src="assets/products/black-pudding.jpg" alt="Black Pudding" class="product-image">
+                    <p class="price">£6.50</p>
+                    <div class="info-row">
+                        <a href="#" class="add-to-basket-btn" aria-label="Add Black Pudding to basket">
+                        <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                        </a>
+                        <div class="stock-level-indicator low-stock">Low Stock</div>
+                    </div>
+                    <h3 class="product-title">Black Pudding</h3>
+                </div>
+
+                <div class="product-card">
+                
+                    <img src="assets/products/smokey-streaky-bacon.jpg" alt="Streaky Bacon" class="product-image">
+                    <p class="price">£5.00</p>
+                    <div class="info-row">
+                        <a href="#" class="add-to-basket-btn" aria-label="Add Streaky Bacon to basket">
+                        <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                        </a>
+                        <div class="stock-level-indicator in-stock">In Stock</div>
+                    </div>
+                    <h3 class="product-title">Streaky Bacon</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="logo-vs-everything-flex-box">
+            <img src="assets/GLH-Logo.png" alt="Greenfield Local Hub Logo" class="footer-logo">
+
+            <section class="everything-except-logo">
+                <section class="page-links-and-social-buttons">
+
+                    <section class="page-links-container">
+                        <section class="page-links-1 page-links">
+                            <a href="index.html">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Trending Products</a>
+                            <a href="contact.html">Contact</a>
+                        </section>
+                        <section class="page-links-2 page-links">
+                            <a href="store.html">Our Store</a>
+                            <a href="our-methods.html">Our Farming Methods</a>
+                            <a href="our-methods.html">Animal Farming Methods</a>
+                            <a href="our-methods.html">Cultivation Methods</a>
+                        </section>
+                        <section class="page-links-3 page-links">
+                            <a href="login.html">Login</a>
+                            <a href="user-profile.html">View account details</a>
+                            <a href="order-history.html">View Order History</a>
+                            <a href="producer-dashboard.html">Producer Dashboard</a>
+                        </section>
+                    </section>
+
+                    <section class="social-buttons-container"> <!--  target="_blank" make links open in new tab - dont remove -->
+                        <a href="https://www.facebook.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Facebook page"><img src="assets/icons/facebook.png" alt="Facebook Icon" class="social-icons"></a>
+                        <a href="https://www.twitter.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Twitter page"><img src="assets/icons/twitter.png" alt="Twitter Icon" class="social-icons"></a>
+                        <a href="https://www.instagram.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Instagram page"><img src="assets/icons/instagram.png" alt="Instagram Icon" class="social-icons"></a>
+                        <a href="https://www.tiktok.com/greenfield-local-hub" target="_blank" aria-label="Visit our TikTok page"><img src="assets/icons/tik-tok.png" alt="TikTok Icon" class="social-icons"></a>
+                    </section>
+
+                </section>
+
+                <section class="GLH-info">
+                    <p>&copy; 2026 Greenfield Local Hub. <br> Greenfield Local Hub 100 Greenfirld Street, GF37 GLH. <br>contact@greenfieldlocalhub.co.uk</p>
+                </section>
+
+            </section>
+
+        </section>
+
+
+    </footer>
+
+
+
+
+
+</body>
+</html>

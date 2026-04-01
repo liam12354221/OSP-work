@@ -1,0 +1,247 @@
+.loyalty-points-cta {
+    background-color: #6AACAD;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 7vh;
+}
+
+.loyalty-cta-container {
+    background-color: #4E8C3F;
+    color: white;
+    border-radius: 20px;
+    max-height: 50%;
+    font-size: 80%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.loyalty-points-cta p {
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.view-rewards-button {
+    background-color: #4E8C3F;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    transition: transform 0.2s ease, background-color 0.2s ease
+}
+
+.view-rewards-button:hover {
+    background-color: #3B6B2E;
+    transform: scale(1.05);
+}
+
+
+/* basket styles */
+
+.users-basket-container {
+    text-align: center;
+    color: #1A2E18;
+    font-size: 2rem;
+    border: 3px solid #2D5A27;
+    border-radius: 70px;
+    padding-bottom: 1.5rem;
+    margin: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.basket-items-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.basket-item-card {
+    width: clamp(250px, 30vw, 350px);
+    background: #fff;
+    border: 2px solid #2D5A27;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 0.8rem;
+    transition: transform 0.2s ease;
+}
+
+.basket-item-card:hover {
+    transform: scale(1.02);
+}
+
+.price {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: 700;
+    color: #1A2E18;
+    border-bottom: 1px solid #2D5A27;
+    padding-bottom: 0.2rem;
+}
+
+
+
+.product-image {
+    margin-top: 0.6rem;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #2D5A27;
+    border-radius: 10px;
+}
+
+.info-row {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.add-to-basket-btn {
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+
+}
+
+.add-to-basket-icon {
+    width: 64px;
+    height: auto;
+    transition: transform .2s ease;
+}
+
+.add-to-basket-icon:hover {
+    transform: scale(1.08);
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-selector button {
+    background-color: #4E8C3F;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.quantity-selector button:hover {
+    background-color: #2D5A27;
+    transform: scale(1.1);
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    border: 1px solid #2D5A27;
+    border-radius: 5px;
+}
+
+.product-title {
+    color: #1A2E18;
+    font-size: 2rem;
+    text-align: center;
+    
+    padding-top: 1rem;
+    margin:0;
+    padding-bottom: 0;
+
+    border-top: 1px solid #2D5A27;
+    
+}
+
+@media (max-width: 820px) {
+    .product-card { width: min(90vw, 300px); }
+}
+
+
+/* checkout form and summary styles */
+
+.checkout-form-and-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+    color: #2D5A27;
+    
+}
+
+.checkout-form input {
+
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #2D5A27;
+    border-radius: 5px;
+    
+}
+
+
+
+.checkout-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.horizontal-row {
+    display: flex;
+    flex-direction: row;
+    gap: 3.5rem;
+}
+
+.vertical-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.order-summary {
+    border: 2px solid #2D5A27;
+    border-radius: 18px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+.payment-method-selector {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #2D5A27;
+    border-radius: 5px;
+}
+
+.place-order-button {
+    background-color: #4E8C3F;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.2s ease
+}
+
+.place-order-button:hover {
+    background-color: #2D5A27;
+    transform: scale(1.05);
+}

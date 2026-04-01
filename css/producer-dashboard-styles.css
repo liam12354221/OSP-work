@@ -1,0 +1,233 @@
+/* Quick links section styles */
+
+.quick-links {
+    text-align: center;
+    color: #1A2E18;
+    font-size: 2rem;
+    border: 3px solid #2D5A27;
+    border-radius: 70px;
+    padding-bottom: 1.5rem;
+    margin: 1.5rem;
+}
+
+.quick-links-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+
+.quick-link-card {
+    width: clamp(250px, 30vw, 350px);
+    border: 2px solid #2D5A27;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.quick-link-card img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.quick-link-card:hover {
+    transform: scale(1.02);
+}
+
+.quick-link-card h3 {
+    color: #1A2E18;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* orders section styles */
+
+.orders-section {
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 3px solid #2D5A27;
+    border-radius: 70px;
+}
+
+.orders-section h2 {
+    text-align: center;
+    color: #1A2E18;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.order-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    border: 2px solid #2D5A27;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.order-image {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #2D5A27;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.vertical-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-contents-column {
+   margin-left: auto; 
+   margin-right: auto;
+}
+
+.order-card p {
+    margin: 0.5rem 0;
+    color: #1A2E18;
+    font-size: 1.2rem;
+    border: 1px solid #2D5A27;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+
+.stock-status.in-stock{background:#66b86d; color:#114116;}
+.stock-status.low-stock{background:#d4a841; color:#583a05; }
+.stock-status.out-of-stock{background:#e46b6b; color:#6b0404; }
+
+.fulfillment-status.true{background:#66b86d; color:#114116;}
+.fulfillment-status.false{background:#e46b6b; color:#6b0404; }
+
+/* manage products section styles */
+
+.manage-products {
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 3px solid #2D5A27;
+    border-radius: 70px;
+}
+
+.manage-products h2 {
+    text-align: center;
+    color: #1A2E18;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.product-card {
+    width: clamp(250px, 30vw, 350px);
+    background: #fff;
+    border: 2px solid #2D5A27;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 0.8rem;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.price {
+    text-align: center;
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-weight: 700;
+    color: #1A2E18;
+    border-bottom: 1px solid #2D5A27;
+    padding-bottom: 0.2rem;
+}
+
+
+.product-image {
+    margin-top: 0.6rem;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #2D5A27;
+    border-radius: 10px;
+}
+
+.info-row {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.product-title {
+    color: #1A2E18;
+    font-size: 2rem;
+    text-align: center;
+    
+    padding-top: 1rem;
+    margin:0;
+    padding-bottom: 0;
+
+    border-top: 1px solid #2D5A27;
+    
+}
+
+
+@media (max-width: 820px) {
+    .product-card { width: min(90vw, 300px); }
+}
+
+.modify-item-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+/* projected income section */
+
+.projected-income-section {
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 3px solid #2D5A27;
+    border-radius: 70px;
+    text-align: center;
+}
+
+
+.projected-income-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.projected-income-section h2 {
+    text-align: center;
+    color: #1A2E18;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}

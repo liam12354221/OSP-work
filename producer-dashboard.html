@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLH | Producer Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/producer-dashboard-styles.css">
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html"><img src="assets/GLH-Logo.png" alt="Greenfield Local Hub Logo" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="our-methods.html">Our Methods</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="right-side-header-icons">
+            <li><a href="user-profile.html"><img src="assets/icons/profile-icon.png" alt="Profile Icon" class="profile-icon" aria-label="View Profile"></a></li>
+            <li><a href="checkout.html"><img src="assets/icons/basket-icon.png" alt="Basket Icon" class="basket-icon" aria-label="View Basket"></a></li>
+        </ul>
+
+    </header>
+
+    <main>
+
+        <!-- Hero section-->
+
+        <section class="hero">
+            <img src="assets/hero-images/standard-hero.jpg" alt="Hero Image" class="hero-image">
+            
+            <div class="welcome-text-container">
+                <h3>Producer Dashboard</h3>
+                <p>View orders, manage and add new products, view sales. Your all in one management system for sales through GLH</p>
+            </div>>
+
+        </section>
+
+
+        <!-- Quick links section -->
+
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <section class="quick-links-row">
+                <a href="shop.html" class="quick-link-card">
+                    <img src="assets/icons/visit-our-online-store.png" alt="Visit Our Online Store Quick Link Image" class="quick-link-image">
+                    <h3>View Orders</h3>
+                </a>
+                <a href="our-methods.html" class="quick-link-card">
+                    <img src="assets/icons/our-farming-methods.png" alt="Our Farming Methods Quick Link Image" class="quick-link-image">
+                    <h3>Manage Products</h3>
+                </a>
+                <a href="producer-dashboard.html" class="quick-link-card">
+                    <img src="assets/icons/view-producer-dashboard.png" alt="View Producer Dashboard Quick Link Image" class="quick-link-image">
+                    <h3>View Income</h3>
+                </a>
+            </section>
+        </section>
+
+
+
+        <!-- Orders section -->
+
+        <section class="orders-section">
+            <h2>Recent Orders</h2>
+            <div class="orders-row">
+                <div class="order-card">
+                    <img src="assets/products/westcombe-cheese.png" alt="Order Image" class="order-image">
+                    <div class="vertical-column">
+                        <p class="stock-status low-stock">Stock status: Low Stock</p>
+                        <p class="order-id">Order ID: #12346</p>
+                        <p class="customer-name">Customer: Customer One</p>  
+                        <p class="proposed-date-of-fulfillment">Proposed Date of Fulfillment: 29/01/2026</p> 
+                    </div>
+                    <div class="vertical-column">
+                        <p class="order-date">Date: 01/01/2026</p>
+                        <p class="delivery-type">Delivery Type: Delivery</p>
+                        <p class="order-total">Total: £105.00</p>
+                        <p class="fulfillment-status true">Fulfillment Status: True</p>
+                    </div>
+                    <div class="vertical-column order-contents-column">
+                        <h2>Order Contents:</h2>
+                        <p>2 x Westcombe Cheddar</p>
+                        <p>1 x Lamb Rack</p>
+                        <p>1 x Spring Lamb Shoulder</p>
+                    </div>
+
+
+                    </div>
+                </div>
+                <div class="order-card">
+                    <img src="assets/products/lamb-rack.png" alt="Order Image" class="order-image">
+                    <div class="vertical-column">
+                        <p class="stock-status out-of-stock">Stock status: Out of Stock</p>
+                        <p class="order-id">Order ID: #12346</p>
+                        <p class="customer-name">Customer: Customer Two</p>
+                        <p class="proposed-date-of-fulfillment">Proposed Date of Fulfillment: 22/01/2026</p>
+                    </div>
+                    <div class="vertical-column">
+                        <p class="order-date">Date: 02/01/2026</p>
+                        <p class="delivery-type">Delivery Type: Collection</p>
+                        <p class="order-total">Total: £22.00</p>
+                        <p class="fulfillment-status false">Fulfillment Status: false</p>
+                    </div>
+                    <div class="vertical-column order-contents-column">
+                        <h2>Order Contents:</h2>
+                        <p>2 x Westcombe Cheddar</p>
+                        <p>1 x Lamb Rack</p>
+                        <p>1 x Spring Lamb Shoulder</p>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <img src="assets/products/spring-lamb-shoulder.jpg" alt="Order Image" class="order-image">
+                    <div class="vertical-column">
+                        <p class="stock-status in-stock">Stock status: In Stock</p>
+                        <p class="order-id">Order ID: #12346</p>
+                        <p class="customer-name">Customer: Customer Three</p>
+                        <p class="proposed-date-of-fulfillment">Proposed Date of Fulfillment: 04/02/2026</p>  
+                    </div>
+                    <div class="vertical-column">
+                        <p class="order-date">Date: 03/01/2026</p>
+                        <p class="delivery-type">Delivery Type: Collection</p>
+                        <p class="order-total">Total: £97.00</p>
+                        <p class="fulfillment-status false">Fulfillment Status: False</p>
+                    </div>
+                    
+                    <div class="vertical-column order-contents-column">
+                        <h2>Order Contents:</h2>
+                        <p>2 x Westcombe Cheddar</p>
+                        <p>1 x Lamb Rack</p>
+                        <p>1 x Spring Lamb Shoulder</p>
+                    </div>
+                        <!-- DO THIS ON ALL COLUMNS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Manage products section -->
+        <section class="manage-products">
+            <h2>View / Edit Products</h2>
+            <div class="product-row">
+
+                <div class="product-card">
+                
+                    <img src="assets/products/westcombe-cheese.png" alt="Westcombe Cheddar" class="product-image">
+                    <p class="price">£6.50</p>
+                    <div class="info-row">
+                        <a href="#" class="edit-product-btn" aria-label="Edit Westcombe Cheddar product details">
+                        <img src="assets/icons/edit-button.png" alt="Edit Product" class="edit-product-icon modify-item-icon">
+                        </a>
+                        <a href="#" class="delete-product-btn" aria-label="Delete Westcombe Cheddar from your products">
+                        <img src="assets/icons/delete-button.png" alt="Delete Product" class="delete-product-icon modify-item-icon">
+                        </a>
+                    </div>
+                    <h3 class="product-title">Westcombe Cheddar</h3>
+                </div>
+
+                <div class="product-card">
+                
+                    <img src="assets/products/lamb-rack.png" alt="Lamb Rack" class="product-image">
+                    <p class="price">£30.00</p>
+                    <div class="info-row">
+                        <a href="#" class="edit-button" aria-label="Edit Lamb Rack product details">
+                        <img src="assets/icons/edit-button.png" alt="Edit Product" class="edit-product-icon modify-item-icon">
+                        </a>
+                        <a href="#" class="delete-button" aria-label="Delete Lamb Rack from your products">
+                        <img src="assets/icons/delete-button.png" alt="Delete Product" class="delete-product-icon modify-item-icon">
+                        </a>
+                    </div>
+                    <h3 class="product-title">Lamb Rack</h3>
+                </div>
+
+                <div class="product-card">
+                
+                    <img src="assets/products/lamb-rack.png" alt="Lamb Rack" class="product-image">
+                    <p class="price">£30.00</p>
+                    <div class="info-row">
+                        <a href="#" class="edit-button" aria-label="Edit Lamb Rack product details">
+                        <img src="assets/icons/edit-button.png" alt="Edit Product" class="edit-product-icon modify-item-icon">
+                        </a>
+                        <a href="#" class="delete-button" aria-label="Delete Lamb Rack from your products">
+                        <img src="assets/icons/delete-button.png" alt="Delete Product" class="delete-product-icon modify-item-icon">
+                        </a>
+                    </div>
+                    <h3 class="product-title">Lamb Rack</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projected income section -->
+
+        <section class="projected-income-section">
+            <h2>Projected Income</h2>
+
+            <div class="projected-income-details">
+            
+                <div class="pie-chart-container">
+
+                    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+                    
+
+                </div>
+
+
+                <div class="income-details">
+
+                    <p>Total Income This Month: <span class="income-figure">£3000</span></p>
+                    <p>Total Income Last Month: <span class="income-figure">£2500</span></p>
+                    <p>Total Income This Year: <span class="income-figure">£15000</span></p>
+
+
+                </div>
+
+            </div>
+
+
+    </main>
+
+    <footer>
+        <section class="logo-vs-everything-flex-box">
+            <img src="assets/GLH-Logo.png" alt="Greenfield Local Hub Logo" class="footer-logo">
+
+            <section class="everything-except-logo">
+                <section class="page-links-and-social-buttons">
+
+                    <section class="page-links-container">
+                        <section class="page-links-1 page-links">
+                            <a href="index.html">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Trending Products</a>
+                            <a href="contact.html">Contact</a>
+                        </section>
+                        <section class="page-links-2 page-links">
+                            <a href="store.html">Our Store</a>
+                            <a href="our-methods.html">Our Farming Methods</a>
+                            <a href="our-methods.html">Animal Farming Methods</a>
+                            <a href="our-methods.html">Cultivation Methods</a>
+                        </section>
+                        <section class="page-links-3 page-links">
+                            <a href="login.html">Login</a>
+                            <a href="user-profile.html">View account details</a>
+                            <a href="order-history.html">View Order History</a>
+                            <a href="producer-dashboard.html">Producer Dashboard</a>
+                        </section>
+                    </section>
+
+                    <section class="social-buttons-container"> <!--  target="_blank" make links open in new tab - dont remove -->
+                        <a href="https://www.facebook.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Facebook page"><img src="assets/icons/facebook.png" alt="Facebook Icon" class="social-icons"></a>
+                        <a href="https://www.twitter.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Twitter page"><img src="assets/icons/twitter.png" alt="Twitter Icon" class="social-icons"></a>
+                        <a href="https://www.instagram.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Instagram page"><img src="assets/icons/instagram.png" alt="Instagram Icon" class="social-icons"></a>
+                        <a href="https://www.tiktok.com/greenfield-local-hub" target="_blank" aria-label="Visit our TikTok page"><img src="assets/icons/tik-tok.png" alt="TikTok Icon" class="social-icons"></a>
+                    </section>
+
+                </section>
+
+                <section class="GLH-info">
+                    <p>&copy; 2026 Greenfield Local Hub. <br> Greenfield Local Hub 100 Greenfirld Street, GF37 GLH. <br>contact@greenfieldlocalhub.co.uk</p>
+                </section>
+
+            </section>
+
+        </section>
+
+
+    </footer>
+
+
+
+
+
+</body>
+</html>

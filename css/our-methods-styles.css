@@ -1,0 +1,62 @@
+.welcome-text-container {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+}
+
+
+
+.methods-container {
+    max-width: 650px; 
+    margin: 0 auto; /* centers - dont remove */
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.methods-container h2 {
+    font-size: 2vw;
+    color: #4E8C3F;
+    margin-bottom: 1vh;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: #1A2E18;
+    margin-bottom: 3rem;
+}
+
+.methods-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.method-card {
+    background-color: #82B560;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: left;
+    max-width: 650px;
+}
+
+.method-card:hover {
+    transform: scale(1.05);
+
+}
+
+.method-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.method-card p {
+    font-size: 1rem;
+    line-height: 1.3; /* makes space between lines bigger - accessiilbity? */
+}
+

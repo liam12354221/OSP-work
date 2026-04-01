@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenfield Local Hub | {Username}</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/user-profile-styles.css">
+    <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="assets/GLH-Logo.png" alt="Greenfield Local Hub Logo" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="our-methods.html">Our Methods</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="right-side-header-icons">
+            <li><a href="user-profile.html"><img src="assets/icons/profile-icon.png" alt="Profile Icon" class="profile-icon" aria-label="View Profile"></a></li>
+            <li><a href="checkout.html"><img src="assets/icons/basket-icon.png" alt="Basket Icon" class="basket-icon" aria-label="View Basket"></a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <!-- Hero section-->
+
+        <section class="hero">
+            <img src="assets/hero-images/standard-hero.jpg" alt="Hero Image" class="hero-image">
+            
+            <div class="welcome-text-container">
+                <h3>Hi {username}</h3>
+                <p>On this page you can view and edit all of your personal details as well as access your order hisotry.</p>
+            </div>
+
+            <a href="producer-dashboard.html" class="producer-dashboard-button">Producer Dashboard</a>
+
+        </section>
+
+
+        <!-- View / edit profile seciton-->
+
+        <section class="view-edit-profile-container">
+
+            <div class="vertical-column">
+
+                <h1>View / Edit Profile</h1>
+
+            <div class="horizontal-row">
+
+                <div class="user-display">
+
+                    <img src="assets/icons/user-profile-picture-here.png" class="user-profile-picture">
+                    <h2>{Username}</h2>
+                    <h2>{UserEmail}</h2>
+                    <img src="assets/icons/edit.png" class="edit-icon">
+
+                </div>
+
+                <div class="user-details">
+                    
+                    <form class="user-details-form">
+
+                        <div class="horizontal-row">
+
+                            <div class="vertical-column">
+                                <label for="first-name">First Name:</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                            </div>
+
+                            <div class="vertical-column">
+                                <label for="surname">Surname:</label>
+                                    <input type="surname" id="surname" name="surname" required>
+                            </div>
+
+                        </div>
+
+
+                        <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+
+
+                        <label for="phone-number">Phone Number:</label>
+                            <input type="phone-number" id="phone-number" name="phone-number" required>
+
+                        
+
+                        <label for="address-line-1">Address Line 1:</label>
+                            <input type="address-line-1" id="address-line-1" name="address-line-1" required>
+
+
+                        <label for="address-line-2">Address Line 2:</label>
+                            <input type="address-line-2" id="address-line-2" name="address-line-2" required>
+
+                            
+
+                        <div class="horizontal-row">
+                            <div class="vertical-column">
+                                <label for="country">Country:</label> 
+                                    <input type="country" id="country" name="country" required>
+                            </div>
+
+                            <div class="vertical-column">
+                                <label for="county">County:</label>
+                                    <input type="county" id="county" name="county" required>
+                            </div>
+                        </div>
+
+
+                            <div class="horizontal-row">
+
+                            <div class="vertical-column">
+                                <label for="post-code">Post Code:</label>
+                                    <input type="post-code" id="post-code" name="post-code" required>
+                            </div>
+
+                            <div class="vertical-column">
+                                <label for="house-number">House Number:</label>
+                                    <input type="house-number" id="house-number" name="house-number" required>
+                            </div>
+                        </div>
+                    </form>
+
+            </div>
+            </div>
+        </section>
+
+
+
+        <section class="order-history-container">
+            <h1>View Order History</h1>
+
+            <section class="filtering-bar">
+            <img src="assets/icons/filter-icon.png" alt="Filter Icon" class="filter-icon">
+            <!-- planned drop down which i will implement using the button image later
+            <select class="filter-dropdown" aria-label="Filter products by category">
+                <option value="">Filter by category</option>
+                <option value="fruit">Fruit</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="dairy">Dairy</option>
+                <option value="meat">Meat</option>
+                <option value="bakery">Bakery</option>
+            
+            </select>
+            -->
+
+
+
+            <img src="assets/icons/sort-icon.png" alt="Sort Icon" class="sort-icon">
+            <!--
+             planned drop down which i will implement using the button image later
+            <select class="sort-dropdown" aria-label="Sort products">
+                <option value="">Sort by</option>
+                <option value="price-low-high">Price: Low to High</option>
+                <option value="price-high-low">Price: High to Low</option>
+                <option value="newest">Newest Arrivals</option>
+                <option value="popularity">Popularity</option>
+            
+            </select>
+            -->
+
+            <input type="text" placeholder="Search orders..." class="search-bar" aria-label="Search orders">
+
+
+            </section>
+
+
+            <section class="view-orders-list">
+
+                <div class="product-row">
+
+                    <div class="product-card">
+                    
+                        <img src="assets/products/westcombe-cheese.png" alt="Westcombe Cheddar" class="product-image">
+                        <p class="price">£34.50</p>
+                        <div class="info-row">
+                            <a href="#" class="add-to-basket-btn" aria-label="Add Westcombe Cheddar to basket">
+                            <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                            </a>
+                            <div class="stock-level-indicator in-stock">In Stock</div>
+                        </div>
+                        <h3 class="order-date">Ordered on 01/01/2026</h3>
+                        <h2 class="products-ordered-heading">Order Contents:</h2>
+                        <h3 class="products-ordered-list">2x Westcombe Cheddar<br>1x Streaky Bacon<br>1x Merguez Sausages</h3>
+                    </div>
+
+                    <div class="product-card">
+                    
+                        <img src="assets/products/lamb-rack.png" alt="Lamb Rack" class="product-image">
+                        <p class="price">£30.60</p>
+                        <div class="info-row">
+                            <a href="#" class="add-to-basket-btn" aria-label="Add Lamb Rack to basket">
+                            <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                            </a>
+                            <div class="stock-level-indicator in-stock">In Stock</div>
+                        </div>
+                        <h3 class="order-date">Ordered on 02/01/2026</h3>
+                        <h2 class="products-ordered-heading">Order Contents:</h2>
+                        <h3 class="products-ordered-list">4x Meguez Sausages<br>1x Spring Lamb Shoulder<br>1x Westcombe Cheddar</h3>
+                    </div>
+
+                    <div class="product-card">
+                    
+                        <img src="assets/products/spring-lamb-shoulder.jpg" alt="Spring Lamb Shoulder" class="product-image">
+                        <p class="price">£33.00</p>
+                        <div class="info-row">
+                            <a href="#" class="add-to-basket-btn" aria-label="Add Spring Lamb Shoulder to basket">
+                            <img src="assets/icons/add-to-basket.png" alt="Add to basket" class="add-to-basket-icon">
+                            </a>
+                            <div class="stock-level-indicator out-of-stock">Out of Stock</div>
+                        </div>
+                        <h3 class="order-date">Ordered on 03/01/2026</h3>
+                        <h2 class="products-ordered-heading">Order Contents:</h2>
+                        <h3 class="products-ordered-list">1x Spring Lamb Shoulder<br>2x Lamb Rack<br>1x Black Pudding</h3>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </section>
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <section class="logo-vs-everything-flex-box">
+            <img src="assets/GLH-Logo.png" alt="Greenfield Local Hub Logo" class="footer-logo">
+
+            <section class="everything-except-logo">
+                <section class="page-links-and-social-buttons">
+
+                    <section class="page-links-container">
+                        <section class="page-links-1 page-links">
+                            <a href="index.html">Home</a>
+                            <a href="#">About Us</a>
+                            <a href="#">Trending Products</a>
+                            <a href="contact.html">Contact</a>
+                        </section>
+                        <section class="page-links-2 page-links">
+                            <a href="store.html">Our Store</a>
+                            <a href="our-methods.html">Our Farming Methods</a>
+                            <a href="our-methods.html">Animal Farming Methods</a>
+                            <a href="our-methods.html">Cultivation Methods</a>
+                        </section>
+                        <section class="page-links-3 page-links">
+                            <a href="login.html">Login</a>
+                            <a href="user-profile.html">View account details</a>
+                            <a href="order-history.html">View Order History</a>
+                            <a href="producer-dashboard.html">Producer Dashboard</a>
+                        </section>
+                    </section>
+
+                    <section class="social-buttons-container"> <!--  target="_blank" make links open in new tab - dont remove -->
+                        <a href="https://www.facebook.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Facebook page"><img src="assets/icons/facebook.png" alt="Facebook Icon" class="social-icons"></a>
+                        <a href="https://www.twitter.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Twitter page"><img src="assets/icons/twitter.png" alt="Twitter Icon" class="social-icons"></a>
+                        <a href="https://www.instagram.com/GreenfieldLocalHub" target="_blank" aria-label="Visit our Instagram page"><img src="assets/icons/instagram.png" alt="Instagram Icon" class="social-icons"></a>
+                        <a href="https://www.tiktok.com/greenfield-local-hub" target="_blank" aria-label="Visit our TikTok page"><img src="assets/icons/tik-tok.png" alt="TikTok Icon" class="social-icons"></a>
+                    </section>
+
+                </section>
+
+                <section class="GLH-info">
+                    <p>&copy; 2026 Greenfield Local Hub. <br> Greenfield Local Hub 100 Greenfirld Street, GF37 GLH. <br>contact@greenfieldlocalhub.co.uk</p>
+                </section>
+
+            </section>
+
+        </section>
+
+
+    </footer>
+
+
+
+
+
+</body>
+</html>
